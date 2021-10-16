@@ -1,0 +1,29 @@
+{
+  "name": "team00777.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass src/1.scss public/css/styles.css",
+    "build-html": "ejs src/index.ejs -o public/index.html",
+    "build": "npm run build-css && npm run build-html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team00777/team00777.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team00777/team00777.github.io/issues"
+  },
+  "homepage": "https://github.com/Team00777/team00777.github.io/index.html",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.43.2"
+  }
+}
