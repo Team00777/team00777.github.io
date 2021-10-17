@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass src/1.scss public/css/styles.css",
+    "build-css": "node-sass src/styles.scss public/css/styles.css",
     "build-html": "ejs src/index.ejs -o public/index.html",
     "build": "npm run build-css && npm run build-html"
   },
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Team00777/team00777.github.io/issues"
   },
-  "homepage": "https://github.com/Team00777/team00777.github.io/index.html",
+  "homepage": "https://github.com/Team00777/team00777.github.io/public/index.html",
   "dependencies": {
     "ejs": "^3.1.6",
     "node-sass": "^6.0.1"

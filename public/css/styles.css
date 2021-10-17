@@ -1,5 +1,11 @@
 p {
   color: black; }
 
-h1 {
-  color: green; }
+.example_paragraph {
+  color: red; }
+
+.example_text p {
+  color: blue; }
+
+footer {
+  background-color: aqua; }
