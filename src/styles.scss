@@ -1,6 +1,34 @@
-p {
-    color: black;
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+@mixin main-align() {
+    max-width: 1300px;    
+    margin: 0 auto;
+}
+@mixin medium-font() {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;    
+    color: #FFFFFF;
+}
+@mixin large-font() {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;   
+    color: #FFFFFF;
 }
 
-@import "components/test.scss";
-@import "components/footer/footer.scss";
+@import "components/header/header.scss";
+@import "components/logo/logo.scss";
+@import "components/menu/menu.scss";
+@import "components/button/button.scss";
+@import "components/main-title/main-title.scss";
+@import "components/text/text.scss";
+@import "components/company-content/company-content.scss";
+@import "components/project-examples-images/project-examples-images.scss";

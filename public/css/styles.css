@@ -1,11 +1,139 @@
-p {
-  color: black; }
+* {
+  box-sizing: border-box; }
 
-.example_paragraph {
-  color: red; }
+body {
+  font-family: 'Poppins', sans-serif; }
 
-.example_text p {
-  color: blue; }
+.header {
+  background: url(../images/main_banner.jpg) no-repeat center; }
 
-footer {
-  background-color: aqua; }
+.header__position {
+  margin-bottom: 115px; }
+
+.header__inner {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px 0 156px; }
+
+.header__top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px; }
+
+.header__central-content {
+  padding: 25px; }
+
+.header__title {
+  margin-bottom: 15px;
+  max-width: 740px; }
+
+.header__text {
+  margin-bottom: 32px;
+  max-width: 445px; }
+
+.logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 77px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif; }
+
+.menu__item {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 24px;
+  margin-right: 37px;
+  text-decoration: none; }
+
+.menu__item:last-child {
+  margin-right: 0; }
+
+.menu__item:hover {
+  text-decoration: underline; }
+
+.button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 27px;
+  width: 158px;
+  height: 72px;
+  background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+  display: block;
+  cursor: pointer;
+  border: none; }
+
+.main-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 78px;
+  color: #FFFFFF; }
+
+.text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 27px; }
+
+.company-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex; }
+
+.company-content__project-examples-images {
+  position: relative;
+  margin-right: 130px; }
+
+.project-examples-images__line {
+  display: flex; }
+
+.project-examples-images__image {
+  display: block;
+  height: 100%; }
+
+.project-examples-images__image:nth-child(odd) {
+  margin-right: 20px; }
+
+.project-examples-images__image_margin-bottom {
+  margin-bottom: 20px; }
+
+.project-examples-images__image_margin-top {
+  margin-top: -83px; }
+
+.project-examples-images__icon {
+  width: 168px;
+  height: 168px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 30px rgba(5, 96, 136, 0.15);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(140%, 75%); }
+
+.project-examples-images__icon::before {
+  content: '';
+  position: absolute;
+  width: 78px;
+  height: 60px;
+  background: url(../images/check_mark.png) no-repeat;
+  transform: translate(60%, 60%); }
+
+.project-examples-images__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  color: #056088;
+  position: absolute;
+  transform: translate(35%, 410%); }

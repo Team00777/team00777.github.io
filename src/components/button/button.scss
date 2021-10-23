@@ -1,0 +1,10 @@
+.button {    
+    @include medium-font();
+    line-height: 27px;
+    width: 158px;
+    height: 72px;
+    background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+    display: block;
+    cursor: pointer;
+    border: none;
+}
