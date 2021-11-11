@@ -1,0 +1,23 @@
+.info-about-company__subtitle, .info-about-company__paragraph {
+    margin-bottom: 16px;
+}
+.info-about-company__paragraph {
+    max-width: 425px;
+}
+.info-about-company__achievements {
+    display: flex;
+    margin-bottom: 32px;
+}
+.info-about-company__achievement {
+    display: block;
+    margin-right: 62px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 170%;
+    color: $blue-color;
+}
+.info-about-company__achievement:last-child {
+    margin-right: 0;
+}

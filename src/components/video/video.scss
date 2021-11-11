@@ -1,0 +1,25 @@
+.video__position {
+    margin-bottom: 100px;
+}
+.video__inner {
+    display: flex;
+    justify-content: center; 
+}
+.video__caption-wrapper {
+    max-width: 1080px;
+    display: flex;
+    justify-content: flex-end;    
+    margin: -110px auto 0;
+}
+.video__caption {    
+    background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
+    max-width: 415px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: $white-color;
+    padding: 32px 67px 39px 53px;  
+    z-index: 10;     
+}

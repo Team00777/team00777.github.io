@@ -1,0 +1,9 @@
+.partners {
+    @include main-align(); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.partners__position {
+    margin-bottom: 100px;
+}

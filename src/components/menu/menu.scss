@@ -1,5 +1,6 @@
 .menu__item {
     @include medium-font();
+    color: $white-color;
     line-height: 24px;
     margin-right: 37px;
     text-decoration: none;

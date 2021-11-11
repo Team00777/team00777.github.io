@@ -1,20 +1,12 @@
-<div class="company-content">
+<div class="company-content company-content__position">
     <div class="project-examples-images company-content__project-examples-images">
-        <div class="project-examples-images__line">
-            <img src="images/cottage.jpg"
-                class="project-examples-images__image project-examples-images__image_margin-bottom" alt="">
-            <img src="images/construction.jpg" class="project-examples-images__image" alt="">
-        </div>
-        <div class="project-examples-images__line">
-            <img src="images/drawing.jpg" class="project-examples-images__image" alt="">
-            <img src="images/cottage_pool.jpg"
-                class="project-examples-images__image project-examples-images__image_margin-top" alt="">
-        </div>
+        <%- include("src/components/project-examples-images/project-examples-images.ejs") %>
     </div>
     <div class="project-examples-images__icon">
         <p class="project-examples-images__text">Pro licensed</p>
     </div>
     <div class="info-about-company">
-        <button class="button">See more</button>
+        <%- include("src/components/info-about-company/info-about-company.ejs") %>
+            <button class="button">See more</button>
     </div>
 </div>

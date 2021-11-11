@@ -4,16 +4,21 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+$white-color: #FFFFFF;
+$blue-color: #056088;
+$gray-color: #434343;
+
 @mixin main-align() {
     max-width: 1300px;    
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;    
 }
 @mixin medium-font() {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;    
-    color: #FFFFFF;
+    font-size: 16px;
 }
 @mixin large-font() {
     font-family: Poppins;
@@ -21,7 +26,7 @@ body {
     font-weight: 700;
     font-size: 52px;
     line-height: 78px;   
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 @import "components/header/header.scss";
@@ -31,4 +36,13 @@ body {
 @import "components/main-title/main-title.scss";
 @import "components/text/text.scss";
 @import "components/company-content/company-content.scss";
+@import "components/info-about-company/info-about-company.scss";
 @import "components/project-examples-images/project-examples-images.scss";
+@import "components/subtitle/subtitle.scss";
+@import "components/paragraph/paragraph.scss";
+@import "components/services-content/services-content.scss";
+@import "components/benefits-content/benefits-content.scss";
+@import "components/works-content/works-content.scss";
+@import "components/reviews/reviews.scss";
+@import "components/partners/partners.scss";
+@import "components/video/video.scss";

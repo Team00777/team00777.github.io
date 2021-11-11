@@ -36,11 +36,9 @@
     transform: translate(60%, 60%);  
 }
 .project-examples-images__text {    
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 170%;
-    color: #056088;
+    @include medium-font(); 
+    line-height: 27px;
+    color: $blue-color;
     position: absolute;
     transform: translate(35%, 410%); 
 }
