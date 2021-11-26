@@ -1,0 +1,39 @@
+<div class="benefits-content <%- className %>">    
+    <%-
+        include("src/components/subtitle/subtitle.ejs", {
+            title: 'Our benefits',
+            className: 'benefits-content__subtitle'
+        })
+    %> 
+    <%-
+        include("src/components/paragraph/paragraph.ejs", {
+            title: 'Here our benefits if you collaboration with our team',
+            className: 'benefits-content__paragraph'
+        })
+    %>    
+    <div class="benefits-content__items">
+        <div class="benefits-content__column">
+            <div class="benefits-content__item benefits-content__item_background-cottage">
+                <h3 class="benefits-content__title">Flexible time</h3>
+                <span class="benefits-content__text benefits-content__text_small-width">We work wherever you ready to
+                    builds. Work fast and profesional</span>
+            </div>
+        </div>
+        <div class="benefits-content__column">
+            <div class="benefits-content__item benefits-content__item_background-interior">
+                <h3 class="benefits-content__title">Customizable design</h3>
+                <span class="benefits-content__text">We can design your buildings,
+                    but we open if you want to customize your design or if you have architect
+                </span>
+            </div>
+        </div>
+        <div class="benefits-content__column">
+            <div class="benefits-content__item benefits-content__item_background-buildings">
+                <h3 class="benefits-content__title">Negotiable price</h3>
+                <span class="benefits-content__text">Yes, we’re open to negotiate the price with you, and we will give
+                    the best price for our lovely clients
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
