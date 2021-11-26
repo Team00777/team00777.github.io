@@ -1,7 +1,12 @@
-<div class="partners partners__position">
-    <h2 class="subtitle partners__subtitle">Our Partners</h2>
-    <img src="images/j_construct.png" class="project-examples-images__image" alt="">
-    <img src="images/arch.png" class="project-examples-images__image" alt="">
-    <img src="images/whix_co.png" class="project-examples-images__image" alt="">
-    <img src="images/dzikra.png" class="project-examples-images__image" alt="">
+<div class="partners <%- className %>">
+    <%-
+        include("src/components/subtitle/subtitle.ejs", {
+            title: 'Our Partners',
+            className: 'partners__subtitle'
+        })
+    %>    
+    <img src="images/j_construct.png" class="project-examples-images__image" alt="Our partner J.construct">
+    <img src="images/arch.png" class="project-examples-images__image" alt="Our partner Arch">
+    <img src="images/whix_co.png" class="project-examples-images__image" alt="Our partner Whix.co">
+    <img src="images/dzikra.png" class="project-examples-images__image" alt="Our partner DZIKRA">
 </div>

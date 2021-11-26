@@ -16,13 +16,13 @@
 
 <body>
 
-    <%- include("src/components/header/header.ejs") %>
-    <%- include("src/components/company-content/company-content.ejs") %>   
-    <%- include("src/components/services-content/services-content.ejs") %> 
-    <%- include("src/components/benefits-content/benefits-content.ejs") %>  
-    <%- include("src/components/works-content/works-content.ejs") %>  
-    <%- include("src/components/partners/partners.ejs") %> 
-    <%- include("src/components/video/video.ejs") %>      
+    <%- include("src/components/header/header.ejs", {className: 'header__position'}) %>
+    <%- include("src/components/company-content/company-content.ejs", {className: 'company-content__position'}) %>
+    <%- include("src/components/services-content/services-content.ejs", {className: 'services-content__position'}) %>
+    <%- include("src/components/benefits-content/benefits-content.ejs", {className: 'benefits-content__position'}) %>
+    <%- include("src/components/works-content/works-content.ejs", {className: 'works-content__position'}) %> 
+    <%- include("src/components/partners/partners.ejs", {className: 'partners__position'}) %>
+    <%- include("src/components/video/video.ejs", {className: 'video__position'}) %>        
    
 </body>
 

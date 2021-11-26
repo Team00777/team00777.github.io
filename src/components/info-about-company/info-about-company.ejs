@@ -1,10 +1,30 @@
-<h2 class="subtitle info-about-company__subtitle">Our company</h2>
-<p class="paragraph info-about-company__paragraph">Debuilds is a team of architects, interior design, and contractors
-    who help our clients not only to build their dream building, but also to feel comfortable after the building is
-    used.</p>
-<p class="paragraph info-about-company__paragraph">We already handled.</p>
-<div class="info-about-company__achievements">
-    <span class="info-about-company__achievement">50+ Clients</span>
-    <span class="info-about-company__achievement">30+ House</span>
-    <span class="info-about-company__achievement">20+ Building</span>
+<div class="info-about-company <%- className %>">
+    <%-
+        include("src/components/subtitle/subtitle.ejs", {
+            title: 'Our company',
+            className: 'info-about-company__subtitle'
+        })
+    %>
+    <%-
+        include("src/components/paragraph/paragraph.ejs", {
+            title: 'Debuilds is a team of architects, interior design, and contractors who help our clients not only to build their dream building, but also to feel comfortable after the building is used.',
+            className: 'info-about-company__paragraph'
+        })
+    %>
+    <%- 
+        include("src/components/paragraph/paragraph.ejs", {
+            title: 'We already handled.',
+            className: 'info-about-company__paragraph'
+        })
+    %>    
+    <div class="info-about-company__achievements">
+        <span class="info-about-company__achievement">50+ Clients</span>
+        <span class="info-about-company__achievement">30+ House</span>
+        <span class="info-about-company__achievement">20+ Building</span>
+    </div>
+    <%-
+        include("src/components/button/button.ejs", {
+            title: 'See more'            
+        })
+    %> 
 </div>

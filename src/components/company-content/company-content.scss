@@ -1,7 +1,8 @@
 .company-content {
     @include main-align();
     display: flex;    
-}
-.company-content__position {
-    margin-bottom: 100px;
+
+    &__position {
+        margin-bottom: 90px;
+    }
 }

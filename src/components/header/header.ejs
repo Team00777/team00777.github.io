@@ -1,23 +1,27 @@
-<header class="header header__position">
+<header class="header <%- className %>">
     <div class="header__inner">  
         <div class="header__top-content">
-        <a href="index.html" class="logo">DB-</a>       
-        <nav class="menu">
-            <a href="" class="menu__item">Home</a>
-            <a href="" class="menu__item">About</a>
-            <a href="" class="menu__item">Services</a>
-            <a href="" class="menu__item">Gallery</a>
-            <a href="" class="menu__item">Contact</a>
-            <a href="" class="menu__item">Story</a>
-            <a href="" class="menu__item">Careers</a>
-            <a href="" class="menu__item">News</a>
-        </nav>  
+        <%- include("src/components/logo/logo.ejs") %>     
+        <%- include("src/components/menu/menu.ejs") %>
     </div>   
     <div class="header__central-content">
-        <h1 class="main-title header__title">We build your dream house well and professionally</h1>
-        <p class="text header__text">Our team can build a house according to your wishes. Any design and concept, we will help make it happen</p>        
-        <button class="button">Contact us</button>        
+        <%- 
+            include("src/components/main-title/main-title.ejs", {
+                title: 'We build your dream house well and professionally', 
+                className: 'header__title'
+            }) 
+        %> 
+        <%-
+            include("src/components/text/text.ejs", {
+                title: 'Our team can build a house according to your wishes. Any design and concept, we will help make it happen',
+                className: 'header__text'
+            })
+        %>           
+        <%-
+            include("src/components/button/button.ejs", {
+                title: 'Contact us'               
+            })
+        %>      
     </div>   
     </div>    
 </header>
-

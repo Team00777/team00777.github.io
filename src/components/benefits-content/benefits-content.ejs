@@ -1,13 +1,22 @@
-<div class="benefits-content benefits-content__position">
-    <h2 class="subtitle benefits-content__subtitle">Our benefits</h2>
-    <p class="paragraph benefits-content__paragraph">Here our benefits if you collaboration with our team</p>
+<div class="benefits-content <%- className %>">    
+    <%-
+        include("src/components/subtitle/subtitle.ejs", {
+            title: 'Our benefits',
+            className: 'benefits-content__subtitle'
+        })
+    %> 
+    <%-
+        include("src/components/paragraph/paragraph.ejs", {
+            title: 'Here our benefits if you collaboration with our team',
+            className: 'benefits-content__paragraph'
+        })
+    %>    
     <div class="benefits-content__items">
         <div class="benefits-content__column">
             <div class="benefits-content__item benefits-content__item_background-cottage">
                 <h3 class="benefits-content__title">Flexible time</h3>
                 <span class="benefits-content__text benefits-content__text_small-width">We work wherever you ready to
-                    builds. Work fast and
-                    profesional</span>
+                    builds. Work fast and profesional</span>
             </div>
         </div>
         <div class="benefits-content__column">

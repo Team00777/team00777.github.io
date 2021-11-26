@@ -1,12 +1,15 @@
-<div class="company-content company-content__position">
-    <div class="project-examples-images company-content__project-examples-images">
-        <%- include("src/components/project-examples-images/project-examples-images.ejs") %>
-    </div>
+<div class="company-content <%- className %>">        
+    <%-
+        include("src/components/project-examples-images/project-examples-images.ejs", {
+            className: 'company-content__project-examples-images'
+        })
+    %>    
     <div class="project-examples-images__icon">
         <p class="project-examples-images__text">Pro licensed</p>
     </div>
-    <div class="info-about-company">
-        <%- include("src/components/info-about-company/info-about-company.ejs") %>
-            <button class="button">See more</button>
-    </div>
+    <%-
+        include("src/components/info-about-company/info-about-company.ejs", {
+            className: 'company-content__info-about-company'
+        })
+    %>         
 </div>

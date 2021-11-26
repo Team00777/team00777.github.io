@@ -1,6 +1,16 @@
-    <div class="services-content services-content__position">
-        <h2 class="subtitle services-content__subtitle">Our services</h2>
-        <p class="paragraph services-content__paragraph">Our services include building new buildings and renovating old buildings</p>        
+    <div class="services-content <%- className %>">
+        <%-
+            include("src/components/subtitle/subtitle.ejs", {
+                title: 'Our services',
+                className: 'services-content__subtitle'
+            })
+        %> 
+        <%-
+            include("src/components/paragraph/paragraph.ejs", {
+                title: 'Our services include building new buildings and renovating old buildings',
+                className: 'services-content__paragraph'
+            })
+        %>           
         <div class="services-content__items">
             <div class="services-content__item">
                 <h3 class="services-content__title services-content__title_icon-pencil">Design building/house</h3>
