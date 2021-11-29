@@ -1,49 +1,20 @@
 <div class="footer">
 
+    <div class="footer__left-content">
+
+    <%- include("src/components/logo/logo.ejs") %>   
+
     <div class="footer__address-item">
-        <p class="footer__address-text">Lizenzo street number 12 Jakarta, Indonesia</p>
+        <p class="footer__address-text">Lizenzo street number 12<br> Jakarta, Indonesia</p>
     </div>
 
-        <div class="site-navigation">
+    <%-
+            include("src/components/button/button.ejs", {
+                title: 'Get directions'               
+            })
+        %>
 
-                <div class="site-navigation__section">
-                    <ul class ="site-navigation__section-items">
-                        <li class="site-navigation__section-item"><h3><a href="#" class="site-navigation__section-heading site-navigation__section-link">Menu</a></h3></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Home</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">About</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Gallery</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Service</a></li>
-                    </ul>
-                </div>
+    </div>
 
-                <div class="site-navigation__section">
-                    <ul class ="site-navigation__section-items">
-                        <li class="site-navigation__section-item"><h3><a href="#" class="site-navigation__section-heading site-navigation__section-link">Contact</a></h3></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">E-mail</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Mobile</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Whatsapp</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Fax</a></li>
-                    </ul>
-                </div>
-
-                <div class="site-navigation__section">
-                    <ul class ="site-navigation__section-items">
-                        <li class="site-navigation__section-item"><h3><a href="#" class="site-navigation__section-heading site-navigation__section-link">Career</a></h3></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Job</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Part-time</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Internship</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="site-navigation__section">
-                    <ul class ="site-navigation__section-items">
-                        <li class="site-navigation__section-item"><h3><a href="#" class="site-navigation__section-heading site-navigation__section-link">Business</a></h3></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Affiliate</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Collaboration</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">Investment</a></li>
-                        <li class="site-navigation__section-item"><a href="#" class="site-navigation__section-link">People</a></li>
-                    </ul>
-                </div>
-        </div>
+    <%- include("src/components/site-navigation/site-navigation.ejs") %>  
 </div>
