@@ -1,0 +1,38 @@
+.reviews-content {
+    @include main-align(); 
+    display: flex;
+
+    &__block {
+        background: #FFFFFF;
+        max-height: 320px;
+        padding: 50px 32px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 401px;
+            background: #FFFFFF; 
+            right: 0;   
+            top: 0;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 16px;       
+    }
+
+    &__paragraph {
+        margin-bottom: 32px;
+        max-width: 195px;        
+    }
+
+    &__image-wrapper {
+        position: relative;
+    }
+
+    &__image {
+        display: block;    
+    }
+}
