@@ -1,0 +1,44 @@
+.site-navigation {
+
+
+    &__wrapper {
+        display: flex;
+        margin-left: 150px;
+    }
+
+    &__section-items {
+        list-style-type: none;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    &__section-link {
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }    
+
+    &__section-heading {
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 170%;
+        margin-bottom: 32px;
+    }
+
+    &__section-item {
+        padding: 8px;
+        
+    }
+
+}
