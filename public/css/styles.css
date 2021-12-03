@@ -455,66 +455,61 @@ body {
   z-index: 10; }
 
 .footer {
-  background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
-  display: flex;
-  padding: 60px 149px 74px 180px; }
-  .footer__left-content {
+  background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%); }
+  .footer__inner {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-direction: column; }
-  .footer__address-item {
-    padding-top: 32px;
-    padding-bottom: 32px; }
+    padding: 60px 80px 74px 110px; }
+  .footer__left-content {
+    margin-right: 140px; }
   .footer__address-text {
+    max-width: 195px;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    margin: 20px 0 30px; }
 
-.site-navigation__wrapper {
+.site-navigation {
   display: flex;
-  margin-left: 150px; }
+  padding-top: 16px; }
+  .site-navigation__section-items:not(:last-child) {
+    margin-right: 137px; }
+  .site-navigation__section-heading {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 170%;
+    margin-bottom: 32px; }
+  .site-navigation__section-item:not(:last-child) {
+    margin-bottom: 16px; }
+  .site-navigation__section-link {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none; }
+    .site-navigation__section-link:hover {
+      text-decoration: underline; }
 
-.site-navigation__section-items {
-  list-style-type: none;
-  margin-left: 50px;
-  margin-right: 50px; }
-
-.site-navigation__section-link {
-  color: #FFFFFF;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  text-decoration: none; }
-  .site-navigation__section-link:hover {
-    text-decoration: underline; }
-
-.site-navigation__section-heading {
-  color: #FFFFFF;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 170%;
-  margin-bottom: 32px; }
-
-.site-navigation__section-item {
-  padding: 8px; }
-
-.bottom-line__wrapper {
+.bottom-line {
   background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 24px; }
-
-.bottom-line__text {
-  color: #434343;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 170%; }
+  .bottom-line__text {
+    color: #434343;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%; }

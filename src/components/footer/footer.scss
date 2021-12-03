@@ -1,24 +1,24 @@
-.footer {
-background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
-display: flex;
-padding: 60px 149px 74px 180px;
+.footer {    
+    background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);      
+   
+    &__inner {
+        @include main-align();
+        display: flex;  
+        padding: 60px 80px 74px 110px;
+    }
 
     &__left-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__address-item {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
+        margin-right: 140px;
+    }    
 
     &__address-text {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    color: #FFFFFF;
+        max-width: 195px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin: 20px 0 30px;
     }
 }

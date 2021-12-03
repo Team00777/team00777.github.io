@@ -1,30 +1,10 @@
 .site-navigation {
+    display: flex;  
+    padding-top: 16px;
 
-
-    &__wrapper {
-        display: flex;
-        margin-left: 150px;
+    &__section-items:not(:last-child) {      
+        margin-right: 137px;
     }
-
-    &__section-items {
-        list-style-type: none;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    &__section-link {
-        color: #FFFFFF;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }    
 
     &__section-heading {
         color: #FFFFFF;
@@ -36,9 +16,21 @@
         margin-bottom: 32px;
     }
 
-    &__section-item {
-        padding: 8px;
-        
+    &__section-item:not(:last-child) {
+        margin-bottom: 16px;
     }
 
+    &__section-link {
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-decoration: none;                      
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }    
 }
