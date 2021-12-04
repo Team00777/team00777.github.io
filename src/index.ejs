@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company DB-</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>hello</h1>
 
-    <%- include("src/components/subscribe-form/subscribe-form.ejs") %>
+<body>
+
+    <%- include("src/components/header/header.ejs", {className: 'header__position'}) %>
+    <%- include("src/components/company-content/company-content.ejs", {className: 'company-content__position'}) %>
+    <%- include("src/components/services-content/services-content.ejs", {className: 'services-content__position'}) %>
+    <%- include("src/components/benefits-content/benefits-content.ejs", {className: 'benefits-content__position'}) %>
+    <%- include("src/components/works-content/works-content.ejs", {className: 'works-content__position'}) %> 
+    <%- include("src/components/partners/partners.ejs", {className: 'partners__position'}) %>
+    <%- include("src/components/video/video.ejs", {className: 'video__position'}) %>        
+    <%- include("src/components/subscription-form/subscription-form.ejs", {className: 'subscription-form__position'}) %>
+    
 </body>
+
 </html>

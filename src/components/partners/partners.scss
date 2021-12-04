@@ -1,0 +1,10 @@
+.partners {
+    @include main-align(); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__position {
+        margin-bottom: 100px;
+    }
+}

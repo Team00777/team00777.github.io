@@ -1,0 +1,33 @@
+    <div class="services-content <%- className %>">
+        <%-
+            include("src/components/subtitle/subtitle.ejs", {
+                title: 'Our services',
+                className: 'services-content__subtitle'
+            })
+        %> 
+        <%-
+            include("src/components/paragraph/paragraph.ejs", {
+                title: 'Our services include building new buildings and renovating old buildings',
+                className: 'services-content__paragraph'
+            })
+        %>           
+        <div class="services-content__items">
+            <div class="services-content__item">
+                <h3 class="services-content__title services-content__title_icon-pencil">Design building/house</h3>
+                <span class="services-content__text">We have an architect for design new buildings</span>
+            </div>
+            <div class="services-content__item">
+                <h3 class="services-content__title services-content__title_icon-sofa">Interior Design</h3>
+                <span class="services-content__text">We have an interior designer for design your perfect inside house</span>
+            </div>
+            <div class="services-content__item">
+                <h3 class="services-content__title services-content__title_icon-building">Build from scratch</h3>
+                <span class="services-content__text">We have an contractor for build new building from scratch</span>
+            </div>
+            <div class="services-content__item">
+                <h3 class="services-content__title services-content__title_icon-tool">Renovation</h3>
+                <span class="services-content__text">We can also renovate or rebuilds new buildings/house</span>
+            </div>
+        </div>
+    </div>
+</div>

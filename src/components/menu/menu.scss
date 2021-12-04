@@ -1,0 +1,17 @@
+.menu {    
+    &__item {
+        @include medium-font();
+        color: $white-color;
+        line-height: 24px;
+        margin-right: 37px;
+        text-decoration: none;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }    
+}
