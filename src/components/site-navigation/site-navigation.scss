@@ -2,7 +2,7 @@
     display: flex;  
     padding-top: 16px;
 
-    &__section-items:not(:last-child) {      
+    &__section:not(:last-child) {
         margin-right: 137px;
     }
 
