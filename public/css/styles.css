@@ -517,7 +517,7 @@ body {
 .site-navigation {
   display: flex;
   padding-top: 16px; }
-  .site-navigation__section-items:not(:last-child) {
+  .site-navigation__section:not(:last-child) {
     margin-right: 137px; }
   .site-navigation__section-heading {
     color: #FFFFFF;
