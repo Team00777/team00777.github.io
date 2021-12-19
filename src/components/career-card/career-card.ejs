@@ -1,0 +1,11 @@
+<li class="card">
+    <h3 class="card__title"><%- title %></h3>
+    <div class="card__description requirements">
+        <ul class="requirements__list">
+            <li class="requirements__item requirements__item-experience"><%- experience %></li>
+            <li class="requirements__item requirements__item-occupation"><%= full_time === true ? 'Full-time' : 'Part-time' %></li>
+            <li class="requirements__item requirements__item-salary">$<%- salary %>/month</li>
+        </ul>
+    </div>
+    <%- include("src/components/button/button.ejs", { title: 'Details' }) %>
+</li>

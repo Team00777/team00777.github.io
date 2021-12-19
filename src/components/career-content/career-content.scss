@@ -1,0 +1,13 @@
+.career{
+    &__content{
+        @include main-align;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .button-secondary{
+        margin-bottom: 100px;
+    }
+}

@@ -28,11 +28,18 @@ $gray-color: #434343;
     line-height: 78px;   
     color: $white-color;
 }
+@mixin title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 41.8px;
+    color: $blue-color;
+}
 
 @import "components/header/header.scss";
 @import "components/logo/logo.scss";
 @import "components/menu/menu.scss";
 @import "components/button/button.scss";
+@import "components/button-secondary/button-secondary.scss";
 @import "components/main-title/main-title.scss";
 @import "components/text/text.scss";
 @import "components/company-content/company-content.scss";
@@ -51,3 +58,6 @@ $gray-color: #434343;
 @import "components/footer/footer.scss";
 @import "components/site-navigation/site-navigation.scss";
 @import "components/bottom-line/bottom-line.scss";
+@import "components/career-content/career-content.scss";
+@import "components/career-card/career-card.scss";
+@import "components/search/search.scss";
