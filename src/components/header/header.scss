@@ -1,5 +1,6 @@
 .header {
-    background: url(../images/main_banner.jpg) no-repeat center;    
+    background: url(../images/main_banner.jpg) no-repeat center;   
+    min-height: 450px; 
 
     &__position {
         margin-bottom: 115px;
@@ -30,5 +31,9 @@
     &__text {
         margin-bottom: 32px;
         max-width: 445px;
+    }
+
+    .main-title.header__title_page_career, .header__title_page_story {
+        display: none;  
     }
 }

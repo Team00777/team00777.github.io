@@ -11,6 +11,18 @@
                 className: 'header__title'
             }) 
         %> 
+        <%- 
+            include("src/components/main-title/main-title.ejs", {
+                title: 'Have a brilliant idea? Join us. We have an opportunity for you', 
+                className: 'header__title_page_career'
+            }) 
+        %>
+        <%- 
+            include("src/components/main-title/main-title.ejs", {
+                title: 'Read some stories from clients!', 
+                className: 'header__title_page_story'
+            }) 
+        %> 
         <%-
             include("src/components/text/text.ejs", {
                 title: 'Our team can build a house according to your wishes. Any design and concept, we will help make it happen',

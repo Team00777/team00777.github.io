@@ -30,6 +30,8 @@ $gray-color: #434343;
 }
 
 @import "components/header/header.scss";
+@import "components/header/header_theme_career.scss";
+@import "components/header/header_theme_story.scss";
 @import "components/logo/logo.scss";
 @import "components/menu/menu.scss";
 @import "components/button/button.scss";
