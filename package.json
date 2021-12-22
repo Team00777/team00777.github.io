@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass src/styles.scss public/css/styles.css",
-    "build-html": "ejs src/pages/career.ejs -o public/career.html",
+    "build-html": "ejs src/index.ejs -o public/index.html",
     "build": "npm run build-css && npm run build-html",
     "watch": "watch \"npm run build\" ./src"
   },
