@@ -1,9 +1,6 @@
 .header_theme_story {
-    background: url(../images/main_banner_not_homepage.jpg) no-repeat center;   
-
-    &.header__position {
-        margin-bottom: 100px;
-    }
+    background: url(../images/main_banner_not_homepage.jpg) no-repeat center;    
+    margin-bottom: 100px;    
 
     .header__inner {
         padding-bottom: 102px;
@@ -27,5 +24,4 @@
         text-align: center;
         margin: 0 auto;
     }
-    
 }

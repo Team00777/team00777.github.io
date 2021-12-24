@@ -29,6 +29,7 @@ $gray-color: #434343;
     color: $white-color;
 }
 
+@import "components/animation-background/animation-background.scss";
 @import "components/header/header.scss";
 @import "components/header/header_theme_career.scss";
 @import "components/header/header_theme_story.scss";
