@@ -1,0 +1,20 @@
+.search{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+
+    &__input{
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid $blue-color;
+        margin-right: 15px;
+        width: 250px;
+        padding: 0;
+        @include medium-font;
+        font-size: 22px;
+
+        &:focus-visible{
+            outline: none;
+        }
+    }
+}

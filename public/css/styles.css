@@ -225,6 +225,22 @@ body {
   cursor: pointer;
   border: none; }
 
+.button-secondary {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+  border-color: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #056088;
+  cursor: pointer; }
+
 .main-title {
   font-family: Poppins;
   font-style: normal;
@@ -743,3 +759,77 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 170%; }
+
+.career__content {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.career__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.career .button-secondary {
+  margin-bottom: 100px; }
+
+.card {
+  width: 420px;
+  margin-bottom: 100px;
+  padding: 30px 30px 16px 30px;
+  box-shadow: 0px 8px 30px rgba(2, 57, 87, 0.15); }
+  .card__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 41.8px;
+    color: #056088;
+    margin-bottom: 16px; }
+
+.requirements__list {
+  margin-bottom: 32px; }
+
+.requirements__item {
+  margin-bottom: 6px;
+  padding-left: 23px;
+  line-height: 27px;
+  position: relative; }
+  .requirements__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+  .requirements__item-experience::before {
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/icons/clock.svg"); }
+  .requirements__item-occupation::before {
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/icons/occupation.svg"); }
+  .requirements__item-salary::before {
+    width: 16px;
+    height: 12px;
+    background-image: url("../images/icons/money.svg"); }
+
+.search {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 50px; }
+  .search__input {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #056088;
+    margin-right: 15px;
+    width: 250px;
+    padding: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: 22px; }
+    .search__input:focus-visible {
+      outline: none; }

@@ -1,0 +1,22 @@
+<div class="career">
+    <div class="career__content">
+        <%- include("src/components/search/search.ejs") %>
+        <ul class="career__list">
+            <% [
+            {title:'Senior architect', experience:'5+ years experience', full_time: true, salary: 9000},
+            {title:'Head of constructions', experience:'5+ years experience', full_time: false, salary: 4000},
+            {title:'Drafter', experience:'5+ years experience', full_time: false, salary: 7000}, 
+            {title:'UI/UX Designer', experience:'5+ years experience', full_time: true, salary: 9500}, 
+            {title:'Driver', experience:'3+ years experience', full_time: true, salary: 7600}, 
+            {title:'Designer', experience:'3+ years experience', full_time: true, salary: 4400}, 
+            {title:'Web developer', experience:'1+ years experience', full_time: true, salary: 12000}, 
+            {title:'Interior designer', experience:'2+ years experience', full_time: false, salary: 3500}, 
+            {title:'Interior designer', experience:'6+ years experience', full_time: true, salary: 6500}, 
+            ].forEach((item)=> {%>
+                <%- include("src/components/career-card/career-card.ejs", { title:item.title,
+                    experience:item.experience, full_time:item.full_time, salary: item.salary}) %>
+                    <% });%>
+        </ul>
+        <%- include("src/components/button-secondary/button-secondary.ejs", { title: 'See more' }) %>
+    </div>
+</div>
