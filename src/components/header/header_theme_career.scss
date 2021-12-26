@@ -1,0 +1,27 @@
+.header_theme_career {
+    background: url(../images/main_banner_not_homepage.jpg) no-repeat center;    
+    margin-bottom: 100px;    
+
+    .header__inner {
+        padding-bottom: 102px;
+    }
+
+    .header__top-content {
+        margin-bottom: 85px;
+    }    
+
+    .header__central-content {
+        padding: 0;
+    }
+
+    .main-title, .text, .button, .main-title.header__title_page_story {
+        display: none;
+    }
+
+    .main-title.header__title_page_career {
+        display: block;
+        max-width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+    }    
+}

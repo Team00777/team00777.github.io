@@ -1,8 +1,11 @@
-.header {
-    background: url(../images/main_banner.jpg) no-repeat center;    
+.header {    
+    width: 100%;
+    min-height: 450px;   
 
     &__position {
-        margin-bottom: 115px;
+        position: absolute;
+        top: 0;
+        left: 0;        
     }
 
     &__inner {
@@ -25,10 +28,71 @@
     &__title {
         margin-bottom: 15px;
         max-width: 740px;
+        animation-name: bounce;
+    -webkit-animation-name: bounce; 
+ 
+    animation-duration: 2s;   
+    -webkit-animation-duration: 2s;
+ 
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;    
+     
+    transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
     }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0%) scaleY(0.6);
+        }
+        60%{
+            transform: translateY(-60%) scaleY(1.1);
+        }
+        70%{
+            transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+        }
+        80%{
+            transform: translateY(0%) scaleY(1.05) scaleX(1);
+        }   
+        90%{
+            transform: translateY(0%) scaleY(0.95) scaleX(1);
+        }               
+        100%{
+            transform: translateY(0%) scaleY(1) scaleX(1);
+        }   
+    }
+     
+    @-webkit-keyframes bounce {
+        0% {
+            -webkit-transform: translateY(0%) scaleY(0.6);
+        }
+        60%{
+            -webkit-transform: translateY(-60%) scaleY(1.1);
+        }
+        70%{
+            -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+        }
+        80%{
+            -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);
+        }   
+        90%{
+            -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);
+        }               
+        100%{
+            -webkit-transform: translateY(0%) scaleY(1) scaleX(1);
+        }       
+    }
+        
+        
+
 
     &__text {
         margin-bottom: 32px;
         max-width: 445px;
+    }
+
+    .main-title.header__title_page_career, .header__title_page_story {
+        display: none;
     }
 }
