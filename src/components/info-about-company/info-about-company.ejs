@@ -1,18 +1,18 @@
 <div class="info-about-company <%- className %>">
     <%-
-        include("src/components/subtitle/subtitle.ejs", {
+        include("../subtitle/subtitle.ejs", {
             title: 'Our company',
             className: 'info-about-company__subtitle'
         })
     %>
     <%-
-        include("src/components/paragraph/paragraph.ejs", {
+        include("../paragraph/paragraph.ejs", {
             title: 'Debuilds is a team of architects, interior design, and contractors who help our clients not only to build their dream building, but also to feel comfortable after the building is used.',
             className: 'info-about-company__paragraph'
         })
     %>
     <%- 
-        include("src/components/paragraph/paragraph.ejs", {
+        include("../paragraph/paragraph.ejs", {
             title: 'We already handled.',
             className: 'info-about-company__paragraph'
         })
@@ -23,7 +23,7 @@
         <span class="info-about-company__achievement">20+ Building</span>
     </div>
     <%-
-        include("src/components/button/button.ejs", {
+        include("../button/button.ejs", {
             title: 'See more'            
         })
     %> 

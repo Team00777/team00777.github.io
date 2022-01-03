@@ -1,19 +1,19 @@
 <div class="reviews-content">
     <div class="reviews-content__block">
         <%-
-            include("src/components/subtitle/subtitle.ejs", {
+            include("../subtitle/subtitle.ejs", {
                 title: 'What our clients say?',
                 className: 'reviews-content__subtitle'
             })
         %>
         <%-
-            include("src/components/paragraph/paragraph.ejs", {
+            include("../paragraph/paragraph.ejs", {
                 title: 'See what our clients say about their new home',
                 className: 'reviews-content__paragraph'
             })
         %>  
         <%-
-            include("src/components/button/button.ejs", {
+            include("../button/button.ejs", {
             title: 'See more'               
             })
         %>
@@ -22,4 +22,4 @@
         <img src="images/cottage_reviews.jpg" class="reviews-content__image" alt="Cottage with pool">
     </div>    
 </div>
-<%- include("src/components/review/review.ejs") %>
+<%- include("../review/review.ejs") %>

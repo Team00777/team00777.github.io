@@ -1,6 +1,6 @@
 <div class="subscription-form <%- className %>">
     <%-
-        include("src/components/main-title/main-title.ejs", {
+        include("../main-title/main-title.ejs", {
             title: 'Want to get our offer updates and news?',
             className: 'subscription-form__main-title'
         })
@@ -10,7 +10,7 @@
         <div class="subscription-form__items">
             <input placeholder="Enter your e-mail here" type="email" class="subscription-form__input-email">
             <%-
-                include("src/components/button/button.ejs", {
+                include("../button/button.ejs", {
                     title: 'Submit'               
                 })
             %> 

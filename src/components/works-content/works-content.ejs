@@ -1,13 +1,13 @@
 <div class="works-content <%- className %>">
     <div class="works-content__inner">
         <%-
-            include("src/components/subtitle/subtitle.ejs", {
+            include("../subtitle/subtitle.ejs", {
                 title: 'Our works',
                 className: 'works-content__subtitle'
             })
         %> 
         <%-
-            include("src/components/paragraph/paragraph.ejs", {
+            include("../paragraph/paragraph.ejs", {
                 title: 'Here our some of the best the result when we build some buildings, houses, and also interior designs',
                 className: 'works-content__paragraph'
             })
@@ -46,11 +46,11 @@
         </div>
         <div class="button-wrapper">
             <%-
-                include("src/components/button/button.ejs", {
+                include("../button/button.ejs", {
                 title: 'See more'               
                 })
             %>   
         </div>
     </div>  
-    <%- include("src/components/reviews-content/reviews-content.ejs") %>      
+    <%- include("../reviews-content/reviews-content.ejs") %>      
 </div>
