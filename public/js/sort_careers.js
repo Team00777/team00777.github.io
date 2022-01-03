@@ -4,7 +4,7 @@ const searchButtonElem = document.querySelector(".search .button");
 
 searchButtonElem.addEventListener("click", filterCareers);
 
-function filterCareers(event) {
+function filterCareers() {
 
     const inputValue = getInputValue();  
     const careerList = getCareersList();
