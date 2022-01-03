@@ -2,7 +2,7 @@
   "name": "team00777.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass src/styles.scss public/css/styles.css",
@@ -22,10 +22,12 @@
   "homepage": "https://github.com/Team00777/team00777.github.io/public/index.html",
   "dependencies": {
     "ejs": "^3.1.6",
+    "express": "^4.17.2",
     "node-sass": "^6.0.1",
     "watch": "^1.0.2"
   },
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "sass": "^1.43.2"
   }
 }

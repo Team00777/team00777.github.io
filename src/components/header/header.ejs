@@ -1,36 +1,36 @@
 <header class="header <%- className %>">
     <div class="header__inner">  
         <div class="header__top-content">
-        <%- include("src/components/logo/logo.ejs") %>     
-        <%- include("src/components/menu/menu.ejs") %>
+        <%- include("../logo/logo.ejs") %>     
+        <%- include("../menu/menu.ejs") %>
     </div>   
     <div class="header__central-content">
         <%- 
-            include("src/components/main-title/main-title.ejs", {
+            include("../main-title/main-title.ejs", {
                 title: 'We build your dream house well and professionally', 
                 className: 'header__title'
             }) 
         %> 
         <%- 
-            include("src/components/main-title/main-title.ejs", {
+            include("../main-title/main-title.ejs", {
                 title: 'Have a brilliant idea? Join us. We have an opportunity for you', 
                 className: 'header__title_page_career'
             }) 
         %>
         <%- 
-            include("src/components/main-title/main-title.ejs", {
+            include("../main-title/main-title.ejs", {
                 title: 'Read some stories from clients!', 
                 className: 'header__title_page_story'
             }) 
         %> 
         <%-
-            include("src/components/text/text.ejs", {
+            include("../text/text.ejs", {
                 title: 'Our team can build a house according to your wishes. Any design and concept, we will help make it happen',
                 className: 'header__text'
             })
         %>           
         <%-
-            include("src/components/button/button.ejs", {
+            include("../button/button.ejs", {
                 title: 'Contact us'               
             })
         %>      
