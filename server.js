@@ -80,9 +80,9 @@ async function sendEmail(enteredEmailAddress) {
     });
 
     const emailSettings = {
-      from: '"Fred Foo 👻" <totestnodemailer@gmail.com>',
+      from: '"Company DB-" <...>',
       to: `${enteredEmailAddress}`,
-      subject: "Thank you!",
+      subject: "Thank you for subscription!",
       html: "<b>Thank you for subscription!</b>",
     }
     
