@@ -847,3 +847,35 @@ body {
     font-size: 22px; }
     .search__input:focus-visible {
       outline: none; }
+
+.customer-opinion {
+  background: url(../images/customer_opinion_background.jpg) no-repeat center; }
+  .customer-opinion__position {
+    margin-bottom: 100px; }
+  .customer-opinion__inner {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .customer-opinion__author-photo {
+    display: block;
+    margin-right: 168px; }
+  .customer-opinion__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin-bottom: 16px; }
+  .customer-opinion__text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+    max-width: 517px; }
