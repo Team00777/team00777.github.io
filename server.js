@@ -30,6 +30,18 @@ app.get("/career", (req, res, next) => {
   });
 });
 
+app.get("/story", (req, res, next) => {
+  ejs.renderFile("./src/pages/story.ejs", function(err, str) {
+
+    if(err) {
+      next(err);
+    return;
+    }
+    
+    res.send(str);
+  });
+});
+
 app.use((err, req, res, next) => {
   if(err) {
     res.send(err.message);
