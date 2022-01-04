@@ -72,17 +72,15 @@ async function sendEmail(enteredEmailAddress) {
   try{
 
     let transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 587,
-      secure: false,
-      auth: {
-        user: "hailee.kunde99@ethereal.email",
-        pass: "sEEntMMKqJrKJfryfZ",
-      },
+        service: 'gmail',
+        auth: {
+        user: "totestnodemailer@gmail.com",
+        pass: 'dYvs$96"Q67H',
+        },
     });
 
     const emailSettings = {
-      from: '"Fred Foo 👻" <foo@example.com>',
+      from: '"Fred Foo 👻" <totestnodemailer@gmail.com>',
       to: `${enteredEmailAddress}`,
       subject: "Thank you!",
       html: "<b>Thank you for subscription!</b>",
