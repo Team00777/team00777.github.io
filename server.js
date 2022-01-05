@@ -1,13 +1,17 @@
-const express = require("express");
-const app = express();
+"use strict"
 
+const express = require("express");
 const ejs = require("ejs");
+const fs = require('fs');
+const nodemailer = require("nodemailer");
+
+const app = express();
 
 
 app.use(express.static("public"));
 
 app.get("/", (req, res, next) => {
-  ejs.renderFile("./src/index.ejs", function(err, str){
+  ejs.renderFile("./src/index.ejs", {enteredEmailAddress: ""}, function(err, str){
 
     if(err) {
       next(err);
@@ -42,40 +46,44 @@ app.get("/story", (req, res, next) => {
   });
 });
 
-app.use((err, req, res, next) => {
-  if(err) {
-    res.send(err.message);
-    console.error(err);
-  }
-})
-
-const fs = require('fs');
-const nodemailer = require("nodemailer");
 const urlencodedParser = express.urlencoded({extended: false});
+const emailValidity = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-app.post("/", urlencodedParser, (req, res) => {
+app.post("/sendEmail", urlencodedParser, async (req, res, next) => {
 
-    if(!req.body) return res.sendStatus(400);
-    console.log(req.body);
-    const enteredEmailAddress = req.body.userEmail;
+    console.log(req.body.userEmail);
+    const enteredEmailAddress = req.body?.userEmail;
+
+    if(!enteredEmailAddress) {
+      return next(new Error("Email was not entered"));
+    } else if(!emailValidity.test(enteredEmailAddress)) {
+      return next(new Error("Email is invalid"));
+    };
 
     fs.appendFile('emailAddresses.txt', `\n${enteredEmailAddress}`, (error) => {
       console.log(error);
     });
     console.log(`Email address ${enteredEmailAddress} has been saved to emailAddresses.txt`);
 
-    sendEmail(enteredEmailAddress);
+  try {
+
+    await sendEmail(enteredEmailAddress);
+    const htmlMainPage = await ejs.renderFile("./src/index.ejs", {enteredEmailAddress});
+    res.send(htmlMainPage);
+
+  } catch (error) {
+    next(error);
+  }
+
 });
 
 async function sendEmail(enteredEmailAddress) {
 
-  try{
-
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-        user: "",
-        pass: '',
+        user: "totestnodemailer@gmail.com",
+        pass: 'dYvs$96"Q67H',
         },
     });
 
@@ -93,10 +101,13 @@ async function sendEmail(enteredEmailAddress) {
         console.log("Email sent successfully");
       }
     });
-  
-  } catch (error) {
-    console.error(error);
-  }
 }
+
+app.use((err, req, res, next) => {
+  if(err) {
+    res.send(err.message);
+    console.error(err);
+  }
+})
 
 app.listen(8000, () => console.info("Server is running..."));
