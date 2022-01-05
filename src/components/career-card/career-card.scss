@@ -1,4 +1,4 @@
-.card{
+.card {
     width: 420px;
     margin-bottom: 100px;
     padding: 30px 30px 16px 30px;
@@ -9,17 +9,17 @@
         margin-bottom: 16px;
     }
 }
-.requirements{
-    &__list{
+.requirements {
+    &__list {
         margin-bottom: 32px;
     }
-    &__item{
+    &__item {
         margin-bottom: 6px;
         padding-left: 23px;
         line-height: 27px;
         position: relative;
 
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             left: 0;
@@ -30,22 +30,22 @@
             background-size: contain;
         }
 
-        &-experience{
-            &::before{
+        &-experience {
+            &::before {
                 width: 14px;
                 height: 14px;
                 background-image: url('../images/icons/clock.svg');
             }
         }
-        &-occupation{
-            &::before{
+        &-occupation {
+            &::before {
                 width: 13px;
                 height: 13px;
                 background-image: url('../images/icons/occupation.svg');
             }
         }
-        &-salary{
-            &::before{
+        &-salary {
+            &::before {
                 width: 16px;
                 height: 12px;
                 background-image: url('../images/icons/money.svg');
