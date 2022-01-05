@@ -1,5 +1,6 @@
 .customer-opinion {
-    background: url(../images/customer_opinion_background.jpg) no-repeat center;  
+    background: url(../images/customer_opinion_background.jpg) no-repeat center; 
+    background-size: cover; 
 
     &__position {
         margin-bottom: 100px;
