@@ -1,0 +1,45 @@
+<div class="slider-text <%- className %>">
+
+    <div class="slider-text__stories">
+        <% [
+        {className: 'story__position story_author_james', title:'I really happy to see the result my new home. It’s really good house and good price too. And they work so fast becasue they have the best team. Once again, thank you. I really appreciate it.', author:'- Mr. Roberto'},
+        {className: 'story__position story_author_ahmed', title:'Our experience with DB- was top from beginning to end. We love our new home and the quality is amazing.', author:'- Mr. Ahmed'},
+        {className: 'story__position story_author_marco', title:'We recently moved into our new home, and we couldn’t be happier. The whole process was a great and easy experience.', author:'- Mr. Marco'},        
+        ].forEach((item)=> {%>           
+            <%- include("../story/story.ejs", {className:item.className,
+                title:item.title,
+                author:item.author}) %>
+                <% });%>
+    </div>
+
+    <div class="slider-text__stories">
+        <% [
+        {className: 'story__position story_author_ahmed', title:'This is our first home and we are beyond happy with our overall experience with DB-. DB- team, were all so helpful and friendly in every step of the way. My family and I could not be happier.', author:'- Mr. John'},
+        {className: 'story__position story_author_james', title:'The best experience ever!', author:'- Mr. Jack'},
+        {className: 'story__position story_author_marco', title:'Work with builders and managers together, ask questions, builders try to 100% satisfy the wishes of the client so that you are happy in your new home.', author:'- Mr. Daniel'},        
+        ].forEach((item)=> {%>
+            <%- include("../story/story.ejs", {className:item.className,
+                title:item.title,
+                author:item.author}) %>
+                <% });%>
+    </div>
+
+    <div class="slider-text__stories">
+        <% [
+        {className: 'story__position story_author_ahmed', title:'DB- takes excellent care of their buyers. From the time building of our home started until we moved in we were taking care of professionally. We love our new home.', author:'- Mr. Charley'},
+        {className: 'story__position story_author_marco', title:'Wonderful experience and great builders! Enjoyed the experience.', author:'- Mr. Thomas'},
+        {className: 'story__position story_author_james', title:'I am extremely happy with DB- and the fantastic service they provide! We were very pleased with the whole process of the home building experience.', author:'- Mr. George'},        
+        ].forEach((item)=> {%>
+            <%- include("../story/story.ejs", {className:item.className,
+                title:item.title,
+                author:item.author}) %>
+                <% });%>
+    </div>
+
+    <div class="slider-text__dots">
+        <span class="slider-text__dot"></span>
+        <span class="slider-text__dot"></span>
+        <span class="slider-text__dot"></span>
+    </div>
+
+</div>
