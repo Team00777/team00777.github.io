@@ -6,9 +6,9 @@
         })
     %> 
     <p class="subscription-form__text">Submit your e-mail and we will give you update about information and discount. Every single week. (not spamming)</p>
-    <form>
+    <form method="post" action="/sendEmail">
         <div class="subscription-form__items">
-            <input placeholder="Enter your e-mail here" type="email" class="subscription-form__input-email">
+            <input placeholder="Enter your e-mail here" type="email" name="userEmail" class="subscription-form__input-email">
             <%-
                 include("../button/button.ejs", {
                     title: 'Submit'               
