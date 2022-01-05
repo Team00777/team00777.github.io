@@ -15,6 +15,10 @@
 </head>
 
 <body>
+
+    <% if(enteredEmailAddress){ %>
+        <%- include("components/subscription-pop-up/subscription-pop-up.ejs") %>
+     <% } %>
     
     <%- include("components/animation-background/animation-background.ejs", {className: 'animation-background__position'}) %>
     <%- include("components/header/header.ejs", {className: 'header__position'}) %>
@@ -27,6 +31,8 @@
     <%- include("components/subscription-form/subscription-form.ejs", {className: 'subscription-form__position'}) %>
     <%- include("components/footer/footer.ejs") %>
     <%- include("components/bottom-line/bottom-line.ejs") %>
+
+    <script src="js/close_subscription-pop-up.js"></script>
     
 </body>
 

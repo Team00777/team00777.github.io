@@ -1,0 +1,30 @@
+.subscription-pop-up{
+    background: linear-gradient(1.17deg, #77adca -19.65%, #85b3c7 93.67%);
+    width: 500px;
+    position: fixed;
+    margin-top: 50px;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+
+    &__message-text{
+        padding: 20px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+
+    &__close{
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icons/Cross.svg);
+        background-repeat: no-repeat;
+    }
+}
