@@ -1,0 +1,51 @@
+<div class="slider-image <%- className %>">
+        <%-
+            include("../subtitle/subtitle.ejs", {
+                title: 'Mr. James’s villa',
+                className: 'slider-image__subtitle'
+            })
+        %> 
+
+    <div class="slider-image__pictures">
+        <% [
+        {className: 'picture__position', link:'images/villa_interior.jpg', title:'Living room design in the villa'},
+        {className: 'picture__position', link:'images/villa_interior_1.jpg', title:'Hallway design in the villa'},
+        {className: 'picture__position', link:'images/villa_interior_2.jpg', title:'Villa with the pool'},        
+        ].forEach((item)=> {%>           
+            <%- include("../picture/picture.ejs", {className:item.className,
+                link:item.link,
+                title:item.title}) %>
+                <% });%>
+    </div>
+
+    <div class="slider-image__pictures">
+        <% [
+        {className: 'picture__position', link:'images/villa_interior_3.jpg', title:'Living room design in the villa'},
+        {className: 'picture__position', link:'images/villa_interior_4.jpg', title:'Living room design in the villa'},
+        {className: 'picture__position', link:'images/villa_interior_5.jpg', title:'Living room design in the villa'},        
+        ].forEach((item)=> {%>           
+            <%- include("../picture/picture.ejs", {className:item.className,
+                link:item.link,
+                title:item.title}) %>
+                <% });%>
+    </div>
+
+    <div class="slider-image__pictures">
+        <% [
+        {className: 'picture__position', link:'images/villa_interior_6.jpg', title:'Kitchen design in the villa'},
+        {className: 'picture__position', link:'images/villa_interior_7.jpg', title:'Dining room design in the villa'},
+        {className: 'picture__position', link:'images/villa_interior_8.jpg', title:'Bedroom design in the villa'},        
+        ].forEach((item)=> {%>           
+            <%- include("../picture/picture.ejs", {className:item.className,
+                link:item.link,
+                title:item.title}) %>
+                <% });%>
+    </div>
+
+    <div class="slider-image__dots">
+        <span class="slider-image__dot"></span>
+        <span class="slider-image__dot"></span>
+        <span class="slider-image__dot"></span>
+    </div>
+
+</div>
