@@ -1,9 +1,9 @@
 .career{
-    &__content{
+    &__content {
         @include main-align;
     }
 
-    &__message{
+    &__message {
         display: none;
         justify-content: center;
         @include medium-font;
@@ -13,13 +13,13 @@
         padding-bottom: 23px;
     }
 
-    &__list{
+    &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .button-secondary{
+    .button-secondary {
         margin-bottom: 100px;
     }
 
