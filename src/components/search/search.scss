@@ -1,9 +1,9 @@
-.search{
+.search {
     display: flex;
     justify-content: end;
     margin-bottom: 50px;
 
-    &__input{
+    &__input {
         display: inline-block;
         border: none;
         border-bottom: 1px solid $blue-color;
@@ -11,9 +11,9 @@
         width: 250px;
         padding: 0;
         @include medium-font;
-        font-size: 22px;
+        font-size: 20px;
 
-        &:focus-visible{
+        &:focus-visible {
             outline: none;
         }
     }

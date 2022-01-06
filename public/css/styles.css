@@ -693,7 +693,11 @@ body {
     padding: 20px 30px;
     width: 502px;
     height: 72px;
-    border: none; }
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px; }
     .subscription-form__input-email::placeholder {
       font-family: Poppins;
       font-style: normal;
@@ -844,7 +848,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    font-size: 22px; }
+    font-size: 20px; }
     .search__input:focus-visible {
       outline: none; }
 
@@ -989,14 +993,15 @@ body {
 
 .subscription-pop-up {
   background: linear-gradient(1.17deg, #77adca -19.65%, #85b3c7 93.67%);
-  width: 500px;
+  box-shadow: 50px -20px #0b3d58;
+  width: 550px;
   position: fixed;
   margin-top: 50px;
   z-index: 100;
   left: 50%;
   transform: translate(-50%); }
   .subscription-pop-up__message-text {
-    padding: 20px;
+    padding: 35px;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
