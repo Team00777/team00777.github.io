@@ -1,0 +1,120 @@
+.benefits-content {
+    @include main-align();    
+    
+    &__position {
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        margin: 0 auto 16px;
+        text-align: center;    
+    }
+
+    &__paragraph {
+        margin: 0 auto 32px;
+        max-width: 348px;
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px -180px;
+    }
+
+    &__column {
+        width: 33.33%;    
+        padding: 0 10px;
+    }
+
+    &__item {
+        padding: 54px 57px 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item_background-cottage {
+        background: url(../images/benefits_background_cottage.jpg) no-repeat; 
+    }
+
+    &__item_background-interior {
+        background: url(../images/benefits_background_interior.jpg) no-repeat;
+    }
+
+    &__item_background-buildings {
+        background: url(../images/benefits_background_buildings.jpg) no-repeat;
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 34px;   
+        color: $white-color;
+        position: relative;    
+        padding-top: 92px;
+        text-align: center;
+        margin-bottom: 16px;
+
+        &::before {
+            background: url(../images/check_mark_white.png) no-repeat;
+            content: "";
+            width: 52px;
+            height: 52px;
+            position: absolute;
+            top: 0;
+            left: 35%;
+            animation-name: pulse;
+            -webkit-animation-name: pulse; 
+            animation-duration: 1.5s;   
+            -webkit-animation-duration: 1.5s; 
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.7;       
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1; 
+            }   
+            100% {
+                transform: scale(0.9);
+                opacity: 0.7;   
+            }           
+        }
+         
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale(0.95);
+                opacity: 0.7;       
+            }
+            50% {
+                -webkit-transform: scale(1);
+                opacity: 1; 
+            }   
+            100% {
+                -webkit-transform: scale(0.95);
+                opacity: 0.7;   
+            }           
+        }
+    }
+
+    &__text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;   
+        line-height: 27px;
+        text-align: center;
+        color: $white-color;      
+
+        &_small-width {
+            max-width: 230px;
+        }
+    }
+}

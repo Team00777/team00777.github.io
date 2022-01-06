@@ -1,0 +1,16 @@
+<nav class="menu">    
+        <% [
+        {title:'Home', link:'/'},
+        {title:'About', link:'#'},
+        {title:'Services', link:'#'},
+        {title:'Gallery', link:'#'},
+        {title:'Contact', link:'#'},
+        {title:'Story', link:'/story'},
+        {title:'Careers', link:'/career'},
+        {title:'News', link:'#'},        
+        ].forEach((item)=> {%>           
+            <%- include("../menu/menu-item.ejs", {
+                link:item.link,
+                title:item.title}) %>
+                <% });%>
+</nav>

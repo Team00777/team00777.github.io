@@ -1,0 +1,34 @@
+.slider-image {
+    @include main-align();
+
+    &__position {
+        margin-bottom: 100px;
+    }
+
+    &__subtitle {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    &__pictures {
+        display: flex;
+        margin-bottom: 32px;
+    }
+
+    &__dots {
+        text-align: center;
+    }
+
+    &__dot {        
+        height: 12px;
+        width: 12px;
+        margin: 0 10px;
+        background-color: #E7E7E7;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
+
+.active {
+    background-color: #023957;
+}

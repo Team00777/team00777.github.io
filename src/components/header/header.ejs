@@ -1,0 +1,39 @@
+<header class="header <%- className %>">
+    <div class="header__inner">  
+        <div class="header__top-content">
+        <%- include("../logo/logo.ejs") %>     
+        <%- include("../menu/menu.ejs") %>
+    </div>   
+    <div class="header__central-content">
+        <%- 
+            include("../main-title/main-title.ejs", {
+                title: 'We build your dream house well and professionally', 
+                className: 'header__title'
+            }) 
+        %> 
+        <%- 
+            include("../main-title/main-title.ejs", {
+                title: 'Have a brilliant idea? Join us. We have an opportunity for you', 
+                className: 'header__title_page_career'
+            }) 
+        %>
+        <%- 
+            include("../main-title/main-title.ejs", {
+                title: 'Read some stories from clients!', 
+                className: 'header__title_page_story'
+            }) 
+        %> 
+        <%-
+            include("../text/text.ejs", {
+                title: 'Our team can build a house according to your wishes. Any design and concept, we will help make it happen',
+                className: 'header__text'
+            })
+        %>           
+        <%-
+            include("../button/button.ejs", {
+                title: 'Contact us'               
+            })
+        %>      
+    </div>   
+    </div>    
+</header>

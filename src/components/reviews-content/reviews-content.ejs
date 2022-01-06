@@ -1,0 +1,25 @@
+<div class="reviews-content">
+    <div class="reviews-content__block">
+        <%-
+            include("../subtitle/subtitle.ejs", {
+                title: 'What our clients say?',
+                className: 'reviews-content__subtitle'
+            })
+        %>
+        <%-
+            include("../paragraph/paragraph.ejs", {
+                title: 'See what our clients say about their new home',
+                className: 'reviews-content__paragraph'
+            })
+        %>  
+        <%-
+            include("../button/button.ejs", {
+            title: 'See more'               
+            })
+        %>
+    </div>
+    <div class="reviews-content__image-wrapper">
+        <img src="images/cottage_reviews.jpg" class="reviews-content__image" alt="Cottage with pool">
+    </div>    
+</div>
+<%- include("../review/review.ejs") %>

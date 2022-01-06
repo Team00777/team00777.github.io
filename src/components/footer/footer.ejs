@@ -1,0 +1,23 @@
+<div class="footer">
+
+    <div class="footer__inner">
+
+    <div class="footer__left-content">
+
+    <%- include("../logo/logo.ejs") %>
+
+    <p class="footer__address-text">Lizenzo street number 12 Jakarta, Indonesia</p>  
+
+    <%-
+        include("../button/button.ejs", {
+            title: 'Get directions'              
+        })
+    %>
+
+    </div>
+
+    <%- include("../site-navigation/site-navigation.ejs") %>  
+
+    </div>
+
+</div>

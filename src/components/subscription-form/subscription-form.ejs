@@ -1,0 +1,19 @@
+<div class="subscription-form <%- className %>">
+    <%-
+        include("../main-title/main-title.ejs", {
+            title: 'Want to get our offer updates and news?',
+            className: 'subscription-form__main-title'
+        })
+    %> 
+    <p class="subscription-form__text">Submit your e-mail and we will give you update about information and discount. Every single week. (not spamming)</p>
+    <form method="post" action="/sendEmail">
+        <div class="subscription-form__items">
+            <input placeholder="Enter your e-mail here" type="email" name="userEmail" class="subscription-form__input-email">
+            <%-
+                include("../button/button.ejs", {
+                    title: 'Submit'               
+                })
+            %> 
+        </div>
+    </form>
+</div>

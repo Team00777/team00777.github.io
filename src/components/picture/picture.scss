@@ -1,0 +1,11 @@
+.picture {
+    display: block;
+
+    &__position {
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+    }
+   
+}

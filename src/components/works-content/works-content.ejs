@@ -1,0 +1,56 @@
+<div class="works-content <%- className %>">
+    <div class="works-content__inner">
+        <%-
+            include("../subtitle/subtitle.ejs", {
+                title: 'Our works',
+                className: 'works-content__subtitle'
+            })
+        %> 
+        <%-
+            include("../paragraph/paragraph.ejs", {
+                title: 'Here our some of the best the result when we build some buildings, houses, and also interior designs',
+                className: 'works-content__paragraph'
+            })
+        %>      
+        <div class="works-content__gallery">
+            <div class="works-content__column works-content__column_margin-right">
+                <img src="images/works_house_1.jpg" class="works-content__image works-content__image_margin-bottom"
+                    alt="House">
+                <img src="images/works_house_2.jpg" class="works-content__image" alt="Entrance to the house">
+            </div>
+            <div class="works-content__column">
+                <img src="images/works_house_3.jpg" class="works-content__image works-content__image_margin-right"
+                    alt="Part of the house">
+            </div>
+            <div class="works-content__column works-content__column_margin-right">
+                <img src="images/works_house_4.jpg" class="works-content__image works-content__image_margin-bottom"
+                    alt="Cottage with pool">
+                <img src="images/works_house_5.jpg" class="works-content__image" alt="Kitchen">
+            </div>
+            <div class="works-content__column">
+                <div class="works-content__top-section">
+                    <div class="works-content__left-side">
+                        <img src="images/works_house_6.jpg"
+                            class="works-content__image works-content__image_margin-right" alt="Living room">
+                    </div>
+                    <div class="works-content__right-side">
+                        <img src="images/works_house_7.jpg"
+                            class="works-content__image works-content__image_margin-bottom" alt="Living room">
+                        <img src="images/works_house_8.jpg" class="works-content__image" alt="Living room">
+                    </div>
+                </div>
+                <div class="works-content__bottom-section">
+                    <img src="images/works_house_9.jpg" class="works-content__image" alt="Living room">
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <%-
+                include("../button/button.ejs", {
+                title: 'See more'               
+                })
+            %>   
+        </div>
+    </div>  
+    <%- include("../reviews-content/reviews-content.ejs") %>      
+</div>

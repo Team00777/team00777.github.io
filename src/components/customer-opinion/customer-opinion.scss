@@ -1,0 +1,42 @@
+.customer-opinion {
+    background: url(../images/customer_opinion_background.jpg) no-repeat center; 
+    background-size: cover; 
+
+    &__position {
+        margin-bottom: 100px;
+    }
+    
+    &__inner {
+        @include main-align();
+        padding: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__author-photo {
+        display: block;
+        margin-right: 168px;
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 170%;
+        color: $white-color;
+        margin-bottom: 16px;
+    }
+
+
+    &__text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 170%;
+        color: $white-color;
+        max-width: 517px;
+    }    
+}
