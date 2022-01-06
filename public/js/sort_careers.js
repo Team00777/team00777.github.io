@@ -6,52 +6,41 @@ searchButtonElem.addEventListener("click", filterCareers);
 
 function filterCareers() {
 
-    const inputValue = getInputValue();  
+    const inputValue = getInputValue();
     const careerList = getCareersList();
     const careerCardsElems = [...careerList.children];
 
     let isCareerFound = false;
 
-    const foundCareer = careerCardsElems.filter((elem) => elem.firstElementChild.innerHTML.toUpperCase()
-                                                                                                        .includes(inputValue.toUpperCase()))
-                                        .reduce((result, elem) => result = elem.firstElementChild.innerHTML, "");
+    const foundCareers = careerCardsElems.filter((elem) => elem.firstElementChild.innerHTML.toUpperCase()
+                                                                                                        .includes(inputValue.toUpperCase()));
 
-    if (!foundCareer || inputValue === "") {
-        renderCareerList(careerCardsElems, inputValue, isCareerFound);
-        return;
+                                                                                                 
+    if (foundCareers.length !== 0) {
+        isCareerFound = true;
     }
 
-    isCareerFound = true;
-
-    renderCareerList(careerCardsElems, foundCareer, isCareerFound);
+    showSeeMoreBtn(inputValue);
+    renderCareerList(careerCardsElems, foundCareers, isCareerFound);
 
 }
 
-function renderCareerList(careerCardsElems, searchedCareer, isCareerFound) {
+function renderCareerList(careerCardsElems, foundCareers, isCareerFound) {
 
-    const seeMoreButton = document.querySelector(".career .button-secondary");
     const noResultMsg = document.querySelector(".career__message");
 
-    noResultMsg.style.display = "none";
-
     if (isCareerFound) {
-        seeMoreButton.style.display = "none";
-
-    } else if (searchedCareer === "") {
-        seeMoreButton.style.display = "block";
-
+        noResultMsg.style.display = "none";
     } else {
         noResultMsg.style.display = "flex";
-        seeMoreButton.style.display = "none";
     }
 
     careerCardsElems.forEach((elem) => {
+        elem.style.display = "none";
+    })
 
-        if (searchedCareer === "" || elem.firstElementChild.innerHTML === searchedCareer) {
-            elem.style.display = "block";
-        } else {
-            elem.style.display = "none";
-        }
+    foundCareers.forEach((elem) => {
+        elem.style.display = "block";
     })
 }
 
@@ -65,4 +54,16 @@ function getInputValue() {
 
 function getCareersList() {
     return document.querySelector(".career__list");
+}
+
+function showSeeMoreBtn(inputValue) {
+
+    const seeMoreButton = document.querySelector(".career .button-secondary");
+
+    if (inputValue === "") {
+        seeMoreButton.style.display = "block";
+        return;
+    }
+    
+    seeMoreButton.style.display = "none";
 }
